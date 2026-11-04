@@ -1,0 +1,5 @@
+# Sólo se publica el sitio generado; las fuentes quedan locales
+*
+!.gitignore
+!docs/
+!docs/**
