@@ -135,8 +135,14 @@ em { font-style: italic; }
 .card .k { font-family: var(--mono); font-size: 13px; color: var(--accent); font-weight: 500; }
 .card h2, .card h3 { font-family: var(--display); font-size: 21px; line-height: 1.22; font-weight: 600; letter-spacing: -.01em; }
 .card .m { font-size: 15px; color: var(--muted); }
-.card a.more { font-size: 15px; align-self: flex-start; margin-top: auto; }
+.card a.more { font-size: 15px; align-self: flex-start; margin-top: auto; max-width: 100%; overflow-wrap: anywhere; }
 .feat .card { flex: 1 1 420px; }
+.card.has-cover { flex-direction: row; gap: 20px; }
+.card-b { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+.cover { flex: 0 0 104px; align-self: flex-start; display: block; border: 1px solid var(--line); background: #fff; }
+.cover:hover { border-color: var(--accent); }
+.cover img { display: block; width: 100%; height: auto; aspect-ratio: 5 / 7; object-fit: cover; object-position: top; border: 0; }
+@media (max-width: 480px) { .card.has-cover { gap: 14px; } .cover { flex-basis: 76px; } }
 
 /* publications */
 details.earlier { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
