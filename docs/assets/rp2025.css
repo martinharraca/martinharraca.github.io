@@ -41,7 +41,7 @@
 .rp-head .byline .eq { display: block; font-size: 14px; color: var(--muted); margin-top: 2px; }
 .rp-head .thesis { font-size: clamp(19px, 2vw, 23px); line-height: 1.4; max-width: 34em; color: var(--ink); }
 .rp-head .btn { border-color: var(--ink); color: var(--ink); }
-.rp-head .btn.solid, .rp-head .btn.solid:hover { color: #0E2A33; }
+.rp-head .btn.solid, .rp-head .btn.solid:hover { color: var(--on-accent); }
 .facts { display: flex; flex-wrap: wrap; gap: 6px 28px; font-family: var(--mono); font-size: 13px; color: var(--muted); letter-spacing: .02em; }
 .facts b { color: var(--ink); font-weight: 500; font-size: 15px; }
 
